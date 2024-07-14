@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 0;
+      background-color: #ffffff;
+      height: 100vh;
+    }
+    .main {
+      background-color: #f5f5f5;
+      max-width: 370px;
+      width: 100%;
+      height: 600px;
+      align-items: center;
+      border-radius: 24px;
+      padding: 25px;
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+    }
+    .main::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 180px;
+      background-color: rgb(33, 193, 246);
+    }
+    .profilephoto {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      margin-top: 60px;
+      background-color: rgb(12, 24, 193);
+      position: relative;
+      z-index: 1;
+    }
+    .heading {
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+    .para {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .social-icons img {
+      margin: 0 10px;
+      padding: 5px;
+  
+    }
+    .facebook {
+      background-color: rgb(74, 74, 250);
+      border-radius: 50%;
+    }
+    .twitter {
+      background-color: rgb(61, 171, 208);
+      border-radius: 70%;
+    }
+    .insta {
+      border-radius: 50%;
+      background-color: rgb(234, 75, 18);
+    }
+    .youtube {
+      border-radius: 50%;
+      background-color: red;
+    }
+    .button {
+      margin: 20px 0;
+    }
+    button {
+      height: 40px;
+      width: 100px;
+      border-radius: 25px;
+      background-color: rgb(15, 149, 232);
+      color: white;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .like, .comment, .share {
+      margin: 20px 10px;
+      padding: 10px;
+      border-right: 2px solid #e7e7e7;
+      color: blue;
+    }
+    .share {
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img src="my.jpg" alt="image" class="profilephoto">
+    <h2 class="heading">Coding lab</h2>
+    <p class="para">YouTuber & Blogger</p>
+    <div class="social-icons">
+
+      <a href="https://www.facebook.com/saiduggani.saiduggani"><img src="facebook-logo-24.png" alt="facebook" class="facebook" >  </a>
+     <a href="https://x.com/dvsteja232813"><img src="bxl-twitter.svg" alt="twitter" class="twitter"></a> 
+     <a href="https://www.instagram.com/_.dvs._.teja._/"> <img src="instagram-alt-logo-24.png" alt="insta" class="insta"></a>
+     <a href="https://www.youtube.com/"><img src="youtube-logo-24.png" alt="youtube" class="youtube"></a> 
+    </div>
+    <div class="button">
+      <button class="b1">Subscribe</button>
+      <button class="b2">Message</button>
+    </div>
+    <div>
+      <img src="like-regular-24.png" alt="like" class="like">
+      <img src="comment-regular-24.png" alt="comment" class="comment">
+      <img src="share-regular-24.png" alt="share" class="share">
+    </div>
+  </div>
+</body>
+</html>
